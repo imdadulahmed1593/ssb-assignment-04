@@ -27,7 +27,21 @@ header {
 }
 .nav-link:hover {
   color: #ffffff !important;
+  border-bottom: 2px solid #b0b0b0;
 }
+/* .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: #b0b0b0;
+}
+.nav-link:hover::before {
+  width: 100%;
+  transition: 0.5s;
+} */
 
 /* banner css */
 
@@ -199,6 +213,7 @@ header {
 }
 /* icons section css starts here */
 .icons {
+  width: 100%;
   border-bottom: 2px solid #b0b0b0;
   font-family: "Open Sans", sans-serif;
 }
@@ -292,6 +307,7 @@ header {
   font-family: "raleway", sans-serif !important;
   padding: 0px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .features h4 {
   font-weight: 700;
@@ -311,4 +327,211 @@ header {
   border-radius: 100%;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+/* pricing section starts here */
+.pricing {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.section_header_content h1 {
+  font-family: "raleway", sans-serif !important;
+  padding: 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section_header_content p {
+  font-family: "raleway", sans-serif !important;
+}
+.section_header_content .line {
+  background-color: #ff9b51;
+  height: 3px;
+  width: 40px;
+  margin: 25px auto;
+}
+.pricing-table-list {
+  /* margin-top: 60px; */
+}
+.table-1 {
+  margin: 0px 30px;
+}
+.table-1 .price-cat {
+  color: #ffffff;
+  padding: 12px 0px;
+  border-bottom: 1px solid white;
+}
+.table-1 .price-cat p {
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.table-1 .price-body {
+  padding: 40px 0px;
+  border-bottom: 5px solid #ff9b51;
+}
+.table-1 .price-body h1 {
+  color: white;
+  font-family: "raleway", sans-serif !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.table-1 .price-body h1 span {
+  font-size: 82px;
+}
+.table-1 .price-body p {
+  color: #999999;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+}
+.table-1 .price-cat,
+.table-1 .price-body {
+  background-color: #333333;
+}
+.table-1 .price-services {
+  background-color: #ffffff;
+}
+.table-1 .price-services ul {
+  padding: 0;
+}
+.table-1 .price-services ul li {
+  list-style: none;
+  border-bottom: 1px solid #e9e9e9;
+  text-transform: uppercase;
+  color: #999999;
+  padding: 10px 0px;
+}
+.middle .price-body {
+  border: 0px;
+  padding: 0px;
+}
+
+.special {
+  padding: 40px 0px;
+}
+.popular {
+  background-color: #ff9b51;
+  padding: 12px 0px;
+}
+
+.popular p {
+  font-style: normal !important;
+  color: #ffffff !important;
+  margin: 0px !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* testimonial section starts here */
+.testimonial {
+  width: 100%;
+  /* padding: 70px 0px; */
+  text-align: center;
+}
+.review-1 {
+  margin: 0px 60px;
+}
+.message {
+  background-color: #cccccc;
+  color: black;
+  /* margin: 0px 20px; */
+  padding: 20px;
+  text-align: left;
+  border-radius: 3px;
+  font-style: italic;
+  position: relative;
+}
+.message .corner {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #cccccc;
+  bottom: -20px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+.user-row {
+  padding-top: 0px !important;
+}
+.user {
+  margin-top: 50px;
+}
+.user .row {
+  padding: 0px !important;
+  display: flex;
+  align-items: center;
+}
+.user .col-md-8 {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.user .col-md-4 {
+  padding-right: 0px;
+}
+/* download section starts here */
+
+.download {
+  width: 100%;
+  background-image: url(../image/bg2.png);
+  text-align: center;
+  color: #ffffff;
+}
+
+.download button {
+  padding: 10px 15px;
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* contact section starts here */
+.contact {
+  width: 100%;
+
+  text-align: center;
+  /* color: #ffffff; */
+}
+
+.contact-form {
+  width: 100% !important;
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0px 100px;
+  justify-content: center;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  color: #bdbdbd;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  padding: 30px 0px 10px 10px;
+  outline-width: 0px;
+}
+/* footer section starts here */
+footer {
+  text-align: center;
+  background-color: black;
+}
+
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: #b0b0b0;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px !important;
 }
